@@ -1,0 +1,18 @@
+{
+"attractions": [
+  {
+   "name": "Coney Island",
+   "address": "6201 Kellogg Ave",
+   "city": "Cincinnati",
+   "state": "OH",
+   "zipcode": "45230"
+  },
+  {
+    "name": "Cincinnati Museum Center",
+    "address": "1301 Western Ave",
+    "city": "Cincinnati",
+    "state": "OH",
+    "zipcode": "45203"
+  }
+ ]
+}
