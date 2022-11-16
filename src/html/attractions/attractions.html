@@ -6,6 +6,27 @@
         <title>Tour Guide - Attractions</title>
         <link rel="stylesheet" href="..\css\style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+        <script>
+
+            $(function() {
+
+
+           var people = [];
+
+           $.getJSON('attractions.json', function(data) {
+               $.each(data.attractions, function(i, f) {
+                  var tblRow = "<tr>" + "<td>" + f.name + "</td>" +
+                   "<td>" + f.address + "</td>" + "<td>" + f.city + "</td>" + "<td>" + f.state + "</td>" + "</tr>"
+                   $(tblRow).appendTo("#userdata tbody");
+             });
+
+           });
+
+        });
+        </script>
+
     </head>
   <body>
 
@@ -33,6 +54,23 @@
                 <p>6201 Kellogg Ave, Cincinnati, OH 45230</p>
             </dd>
         </dl>
+
+        <div class="wrapper">
+            <div class="profile">
+                <table id= "userdata" border="2">
+                    <thead>
+                    <th>name</th>
+                    <th>address</th>
+                    <th>city</th>
+                    <th>state</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
     </main>
 
 
