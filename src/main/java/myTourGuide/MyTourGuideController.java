@@ -17,10 +17,10 @@ public class MyTourGuideController {
     @RequestMapping("/")
     public String index() {
         TourEntry tourEntry = new TourEntry();
-        tourEntry.setNotes("I did it");
-        String notes = tourEntry.getNotes();
-        tourEntry.setDate("Oct 10, 2022");
-        String date = tourEntry.getDate();
+        tourEntry.setEntry("I completed my first entry");
+        String entry = tourEntry.getEntry();
+        tourEntry.setLocation("Cincinnati, OH");
+        String location = tourEntry.getLocation();
         return "start";
     }
 
