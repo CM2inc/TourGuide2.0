@@ -18,7 +18,7 @@
            $.getJSON('attractions.json', function(data) {
                $.each(data.attractions, function(i, f) {
                   var tblRow = "<tr>" + "<td>" + f.name + "</td>" +
-                   "<td>" + f.address + "</td>" + "<td>" + f.city + "</td>" + "<td>" + f.state + "</td>" + "</tr>"
+                   "<td>" + f.address + ", " + f.city + ", " + f.state + ", " + f.zipcode + "</td>" + "</tr>"
                    $(tblRow).appendTo("#userdata tbody");
              });
 
@@ -57,13 +57,8 @@
 
         <div class="wrapper">
             <div class="profile">
-                <table id= "userdata" border="2">
-                    <thead>
-                    <th>name</th>
-                    <th>address</th>
-                    <th>city</th>
-                    <th>state</th>
-                    </thead>
+                <table id= "userdata" border="2" style="float:left;">
+
                     <tbody>
 
                     </tbody>
