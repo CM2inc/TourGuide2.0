@@ -66,7 +66,8 @@ https://github.com/bolandmj/TourGuide/blob/main/Storyboard.pptx
 
 
 ##   ScrumRole:
-* Max Boland: Scrum Master/Product Owner/Github Admin
+* Max Boland: Scrum Master/Product Owner
+* Cepada Morgan: Github Admin/Backend developer
 * Brian Kenkel : UI Developer
 * Jakob Brown: Business Logic and Persistance
 
