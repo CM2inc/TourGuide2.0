@@ -17,9 +17,10 @@
 
            $.getJSON('attractions.json', function(data) {
                $.each(data.attractions, function(i, f) {
-                  var tblRow = "<tr>" + "<td>" + f.name + "</td>" +
-                   "<td>" + f.address + ", " + f.city + ", " + f.state + ", " + f.zipcode + "</td>" + "</tr>"
-                   $(tblRow).appendTo("#userdata tbody");
+                  var Row = '<div class="location">' + '<tr style="text-indent:25px;">' + '<td class="left">' +
+                  '<img src="img.png" alt="Coney Island">' + '</td>' + '<td>' + '<h1>' + f.name + '</h1>' +
+                  '<p>' + f.address + ", " + f.city + ", " + f.state + ", " + f.zipcode + '<p>' + '</td>' + '</tr>' + '</div>'
+                  $(Row).appendTo(".tbody");
              });
 
            });
@@ -45,34 +46,10 @@
             </div>
         </nav>
 
-        <div class="location">
-            <dl style="text-indent:25px;">
-                <div class="left">
-                    <dt>
-                        <img src="img.png" alt="Coney Island">
-                    </dt>
-                </div>
+        <table class="tbody" id="attractions">
 
-                <div class="right">
-                    <dd>
-                        <h1>Coney Island</h1>
-                        <p>6201 Kellogg Ave, Cincinnati, OH 45230</p>
-                    </dd>
-                </div>
-            </dl>
-        </div>
+        </table>
 
-        <div class="wrapper">
-            <div class="profile">
-                <table id= "userdata" border="2" style="float:left;">
-
-                    <tbody>
-
-                    </tbody>
-                </table>
-
-            </div>
-        </div>
     </main>
 
 
