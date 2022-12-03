@@ -13,6 +13,14 @@
     "city": "Cincinnati",
     "state": "OH",
     "zipcode": "45203"
+  },
+  {
+    "name": "Kings Island",
+    "address": "6300 Kings Island Dr",
+    "city": "Mason",
+    "state": "OH",
+    "zipcode": "45040"
   }
+
  ]
 }
